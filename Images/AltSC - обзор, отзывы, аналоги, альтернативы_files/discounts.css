@@ -1,0 +1,125 @@
+/*********************************DISCOUNTS*********************************/
+/*Used: ITDiscount, LB network sidebar*/
+
+
+.discount_block {
+box-sizing: border-box;
+text-align:left;
+display:inline-block;
+margin-right:0.7em;
+vertical-align:top;
+overflow: hidden;
+width:48%;
+height:10em;
+padding:10px;
+margin-bottom:10px;
+background-color:#FCFCFC;
+}
+
+.discount_block_title {
+text-align:left;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.3em;
+font-weight:normal;
+margin-bottom:0.5em;
+margin-top:0px;
+}
+
+.discount_block_title a {
+text-decoration:underline;
+}
+
+.discount_block_title a:hover {
+color:#4B8ABF;
+}
+
+.discount_block_left {
+font-size:14px;
+margin-bottom:10px;
+font-weight:bold;
+}
+
+.discount_block_screenshot {
+position: relative;
+display: inline-block;
+}
+
+.discount_block_ribbon {
+position: absolute;
+right:10px;
+top:0px;
+}
+
+.discount_block_big {
+box-sizing: border-box;
+width:100%;
+padding: 1em; 
+margin-top:1.3em;
+margin-bottom:1.3em;
+background-color:#FCFCFC;
+font-size:1em;
+text-align:justify;
+}
+
+.discount_block_big a {
+font-weight:bold;
+color:#4B8ABF;
+}
+
+/*Sidebar Discount*/
+
+.discount_sidebar {
+box-sizing: border-box;
+width:100%;
+padding: 0 0.7em 0.7em 0.7em; 
+margin-top:1em;
+margin-bottom:1em;
+background-color:#FCFCFC;
+border:1px solid #CC0000;
+font-size:1em;
+}
+
+.discount_sidebar img {
+border-top:1px solid #CC0000;
+float:left;
+max-width:12%;
+margin-right:0.7em;
+}
+
+.discount_sidebar_title {
+padding-top:0.3em;
+padding-bottom:0.3em;
+text-align:left;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.3em;
+font-weight:normal;
+}
+
+.discount_sidebar_title a {
+color:#CC0000;
+text-decoration:underline;
+}
+
+.discount_sidebar a a:hover {
+color:#4B8ABF;
+text-decoration:underline;
+}
+
+.countdown {
+font-family: verdana, Arial, Geneva CY, sans-serif;
+font-size:1em;
+}
+
+/*****************************************************************************/
+/*******************************MOBILE****************************************/
+/*****************************************************************************/
+
+
+@media only screen and (max-width: 1023px) {
+
+.discount_block {
+display:block;
+width:100%;
+}
+
+}

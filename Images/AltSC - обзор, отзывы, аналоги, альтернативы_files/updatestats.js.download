@@ -1,0 +1,24 @@
+
+function updatestats (banner_upper_id, banner_sidebar_id, banner_under_id, ad_tag)
+{
+	// Определяем ширину экрана
+	var width=document.body.clientWidth;
+	
+	// Создаём новый объект XMLHttpRequest
+	var xhr = new XMLHttpRequest();
+	// Формируем урл
+	var url = "/updatestats.php?ad_tag="+ ad_tag;
+	// Дополняем URL. Если это мобильный девайс - верхний баннер забываем
+		if (width > 1023 && banner_upper_id > 0) url = url + "&banner_upper_id=" + banner_upper_id;
+		if (banner_sidebar_id > 0) url = url + "&banner_sidebar_id=" + banner_sidebar_id;
+		if (banner_under_id > 0) url = url + "&banner_under_id=" + banner_under_id; // если даже это мобильная версия - вместо баннера under покажется тот же баннер mobile
+
+	// Конфигурируем GET-запрос на URL
+	xhr.open('GET', url, false);
+	
+	// Отсылаем запрос
+	xhr.send();
+	
+}
+
+

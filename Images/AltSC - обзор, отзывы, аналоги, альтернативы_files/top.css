@@ -1,0 +1,356 @@
+/*****************************************************************************/
+/*********************************FullHD 1440**********************************/
+/*****************************************************************************/
+
+/*********************************Top*********************************/
+
+.top-item {
+display:block;
+margin-bottom:0.7em;
+margin-top:0.7em;
+}
+
+.position {
+box-sizing: border-box; /*div will include padding and border*/
+display:table-cell;
+vertical-align:middle;
+float:left;
+width:2.9em;
+height:1.5em;
+text-align:center;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 1em;
+color: #666666;
+font-weight: bold;
+border:1px solid #70A0CD;
+background-color:#FFFFFF;
+}
+
+.ua {
+background: url(../images/uaflag.gif);
+background-size:cover;
+border-color:#CCCCCC;
+}
+
+
+.item-title {
+box-sizing: border-box; /*div will include padding and border*/
+height:1.3em;
+vertical-align:middle;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size: 1.2em;
+color: #4B8ABF;
+text-align: left;
+font-weight: bold;
+background-color:#F7F7F7;
+padding-top:0.1em;
+white-space: nowrap; /* for mobile */
+overflow: hidden; /* for mobile */
+}
+
+.item-title a, .item-title a:visited{
+color: #4B8ABF;
+text-decoration:none;
+margin-left:0.5em;
+}
+
+.item-image {
+float:left;
+margin-right:0.7em;
+margin-top:0.5em;
+margin-bottom:0.7em;
+width:300px;
+background-color:#F5F5F6;
+text-align:center;
+}
+
+.item-image img {
+max-height:300px;
+}
+
+.item-description {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 1em;
+margin-top:0.5em;
+margin-bottom:0.7em;
+text-align:justify;
+display: table;
+}
+
+.item-description a { /*for profile description link*/
+color: #4B8ABF;
+font-weight:normal;
+text-decoration:underline;
+}
+
+.item-comments {
+margin-bottom:2em;
+}
+
+.seemore{
+box-sizing: border-box; /*div will include padding and border*/
+font-size:1em;
+text-align:left;
+}
+
+.seemore a{
+background: #f4f4f4;
+text-decoration:none;
+border:1px solid #ccc;
+color:#666666;
+padding:0.3em;
+margin:0.3em;
+}
+
+.seemore a:hover{
+ background: #fff;
+ color:#666666; 
+ border:1px solid #aaa; 
+}
+
+
+.vote {
+float:left;
+width:30px;
+height:30px;
+background:transparent url(../images/vote.gif) no-repeat left top;
+cursor:pointer;
+margin-left:5px;
+margin-top: 5px;
+margin-right:5px;
+}
+
+.vote:hover {
+background:transparent url(../images/vote-active.gif) no-repeat left top;
+cursor:pointer;
+}
+
+.voted a {
+clear:left;
+float:left;
+width:30px;
+height:30px;
+background:transparent url(../images/vote-active.gif) no-repeat left top;
+cursor:pointer;
+margin-left:5px;
+margin-top: 5px;
+margin-right:5px;
+}
+
+/*********************************TOOL*********************************/
+
+.intro {
+background-color:#F9F9F9;
+padding:0.7em;
+font-size:1em;
+text-align:justify;
+margin-bottom:1em;
+}
+
+.intro a {
+color:#4B8ABF;
+text-decoration:underline;}
+
+.intro img { /*Used in tool reviews, tag-content*/
+max-width:100%;
+}
+
+/*СПОИЛЕР*/
+
+
+
+.showmore_one {
+padding-bottom:1.1em;
+padding-right:2.5em;
+position:relative;
+}
+
+.showmore_content {
+position:relative;
+overflow:hidden;
+}
+.showmore_trigger {
+width:1.8em;
+position:absolute;
+top:0.7em;
+right:0.3em;
+cursor:pointer;
+}
+.showmore_trigger span {
+display: inline-block;
+}
+
+/*TOOL*/
+
+.item_link {
+background-color:#F9F9F9;
+padding:0.7em;
+font-size:1em;
+text-align:justify;
+white-space: nowrap; /* for mobile */
+overflow: hidden; /* for mobile */
+}
+
+.item_link a {
+color:#4B8ABF;
+text-decoration:underline;}
+
+.tool-image { /*used in profile*/
+float:left;
+margin-right:10px;
+margin-top:0px;
+margin-bottom:10px;
+}
+
+.tool-description {
+font-size: 0.8em;
+margin-top: 5px;
+margin-bottom:20px;
+text-align:justify;
+display:table;
+}
+
+.tool-description a {
+color:#4B8ABF;
+text-decoration:underline;}
+
+.tool-video {
+margin-top:10px;
+margin-bottom:20px;
+}
+
+.tool_vs {
+text-align:left;
+margin-bottom:20px;
+margin-top:10px;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:16px;
+color:#999999;
+}
+
+.tool_vs a{
+color:#999999;
+}
+
+
+/*********************************Top Widget*********************************/
+
+H4 {
+/*Used: tool-subtitle*/
+color:#1F9C3E;
+text-align:left;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.4em;
+font-weight:normal;
+margin-bottom:0px;
+margin-top:0px;
+}
+
+H4 a {
+color:#1F9C3E;
+text-decoration:underline;
+}
+
+H4 a:hover {
+color:#4B8ABF;
+}
+
+.sidebar-top {
+margin-top:1.4em;
+font-size:1em;
+margin-bottom:1.4em;
+}
+
+.sidebar-top H4 {
+max-width:100%;
+}
+
+.sidebar-top table {
+width:100%;
+}
+
+td.top_widget_n {
+height:2.6em;
+width:2.7em;
+text-align:center;
+vertical-align:middle;
+background:transparent url(../images/top_widget_n.jpg) no-repeat;
+background-size: contain;
+}
+
+.top_widget_tool {
+text-align:left;
+vertical-align:middle;
+border-bottom:1px solid #C0BEBE;
+}
+
+.top_widget_tool a {
+color:#4B8ABF;
+}
+
+/*SIDEBAR RATINGS*/
+
+.sidebar_tops {
+margin-top:1.2em;
+margin-bottom:1.4em;
+}
+
+.sidebar_tops a:hover {
+color:#1E9B3D;
+}
+
+.sidebar_tops img {
+max-width:100%;
+padding:0.2em 0 0.2em 0;
+}
+
+.sidebar_top_title {
+font-size:1.3em;
+font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.sidebar_top_title a {
+color:#888888;
+}
+
+.sidebar_top_subtitle {
+padding-top:0.2em;
+padding-buttom:0.2em;
+font-size:1.1em;
+font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.sidebar_top_subtitle a {
+font-family:Georgia, "Times New Roman", Times, serif;
+color:#888888;
+}
+
+.active a{
+color:#1E9B3D;
+}
+
+/*****************************************************************************/
+/***********************************HD 1152***********************************/
+/*****************************************************************************/
+
+@media only screen and (max-width: 11439px) { /**Replace to 1439 when FullHD wins**/
+
+.top_widget_n {
+height:32px;
+width:34px;
+}
+
+}
+
+/*****************************************************************************/
+/*******************************MOBILE****************************************/
+/*****************************************************************************/
+
+
+@media only screen and (max-width: 1023px) {
+
+.item-image {
+float:none;
+}
+
+}

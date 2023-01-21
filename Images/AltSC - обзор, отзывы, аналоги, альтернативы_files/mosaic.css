@@ -1,0 +1,122 @@
+/*****************************************************************************/
+/*********************************FullHD 1440**********************************/
+/*****************************************************************************/
+
+
+#mosaic {
+width:100%;
+text-align:justify;
+margin-top:1em;
+}
+
+.mosaic_block {
+display:inline-block;
+text-align:left;
+box-sizing: border-box; /*div will include padding and border*/
+padding:0.65em; /*??? better set in pixels for all sizes*/
+max-width:322px; /*??? width:334px; /*+border*/
+height:14em;
+margin-bottom:1em;
+vertical-align:top;
+border:1px solid #e3e3e3;
+overflow: hidden;
+}
+
+.mosaic_block_title {
+color:#1F9C3E;
+text-align:left;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.35em;
+font-weight:normal;
+margin-bottom:0.5em;
+margin-top:0.5em;
+}
+
+.mosaic_block_title a {
+color:#1F9C3E;
+text-decoration:underline;
+}
+
+.mosaic_block_title a:hover {
+color:#4B8ABF;
+}
+
+.mosaic_block img {
+max-width:100%;
+}
+
+.mosaic_block_text {
+font-size:1em;
+text-align:left;
+}
+
+/*for empty blocks in mosaic with justify*/
+/*should be under all mosaic styles*/
+.empty {
+height:0;
+border:0;
+margin:0;
+padding:0;
+}
+
+
+/*****************************************************************************/
+/***********************************HD 1152***********************************/
+/*****************************************************************************/
+
+@media only screen and (max-width: 11439px) { /**Replace to 1439 when FullHD wins**/
+
+.mosaic_block {
+width:270px;
+}
+
+/*for empty blocks in mosaic with justify*/
+/*should be under all mosaic styles*/
+.empty {
+height:0;
+border:0;
+margin:0;
+padding:0;
+}
+
+}
+
+/*****************************************************************************/
+/***********************************Tablet 1024*********************************/
+/*****************************************************************************/
+
+@media only screen and (max-width: 1151px) {
+
+.mosaic_block {
+width:240px;
+}
+
+}
+
+/*****************************************************************************/
+/*******************************MOBILE****************************************/
+/*****************************************************************************/
+
+
+@media only screen and (max-width: 1023px) {
+
+#mosaic {
+text-align:center;
+}
+
+.mosaic_block {
+width:100%;
+max-width:322px;/*???*/
+height:auto;
+}
+
+/*for empty blocks in mosaic with justify*/
+/*should be under all mosaic styles*/
+.empty {
+height:0;
+border:0;
+margin:0;
+padding:0;
+}
+
+}

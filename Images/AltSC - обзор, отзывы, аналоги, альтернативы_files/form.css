@@ -1,0 +1,119 @@
+/* CSS Document */
+
+input { /*Used in search*/
+box-sizing: border-box; /*div will include padding and border*/
+height:36px;
+font-size: 1em;
+border: 1px solid #B2B2B2;
+background-color:#F6F6F6;
+padding-left:5px;
+}
+
+
+
+
+/*****************************Forms****************************************/
+/***********************Login, Profile, Register***********************/
+
+.public {
+float:left;
+text-align:left;
+margin-top:1em;}
+
+.public a {
+text-align:center;
+border:1px solid #e3e3e3;
+padding: 3px 3px 3px 3px;
+font-size:0.8em;
+color:#4B8ABF;
+text-decoration:none;
+}
+
+.public a:hover{
+color:#FF3300;
+text-decoration:none;
+border:1px solid #FF3300;
+padding: 3px 3px 3px 3px;}
+
+.form {
+padding:1em;
+border:1px solid #e3e3e3;
+background-color:#FFFFFF;
+}
+
+.form p {
+text-align:left;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.2em;
+color:#999999;
+margin: 0.2em;
+}
+
+.form input {
+background: #f4f4f4;
+border: 1px solid #b2b2b2;
+color: #000;
+padding:3px;
+font: 0.9em Verdana, Arial, Helvetica, sans-serif;
+width: 95%;
+margin-bottom:0.5em;
+}
+
+.form textarea {
+padding: 5px 5px 5px 5px;
+background: #f4f4f4;
+border: 1px solid #b2b2b2;
+color: #000;
+font: 0.9em Verdana, Arial, Helvetica, sans-serif;
+width: 95%;
+}
+
+.alert {
+margin: 5px 0px 10px 0px;
+padding: 5px 5px 5px 5px;
+display:block;
+background-color:#FFFFCC;
+color:#000000;
+font-size:1em;
+text-align:justify;
+border:1px solid #e3e3e3;
+}
+
+.button, input.button
+{
+background:#0370ea;
+background:-moz-linear-gradient(top,#008dfd 0,#0370ea 100%);
+background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#008dfd),color-stop(100%,#0370ea));
+background:-webkit-linear-gradient(top,#008dfd 0,#0370ea 100%);
+background:-o-linear-gradient(top,#008dfd 0,#0370ea 100%);
+background:-ms-linear-gradient(top,#008dfd 0,#0370ea 100%);
+background:linear-gradient(top,#008dfd 0,#0370ea 100%);
+border:1px solid #076bd2;
+-moz-border-radius:0.3em;
+border-radius:0.3em;
+color:#fff !important;
+font-size:1em;
+font-weight:700;
+height:2.5em;
+width:14em;
+text-align:center;
+text-decoration:none !important;
+text-shadow:1px 1px 1px #076bd2;
+margin-bottom:0px;
+}
+
+.button:hover{background:-moz-linear-gradient(top,#008dfd 30%,#0370ea 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(30%,#008dfd),color-stop(100%,#0370ea));background:-webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);background:-o-linear-gradient(top,#008dfd 30%,#0370ea 100%);background:-ms-linear-gradient(top,#008dfd 30%,#0370ea 100%);background:linear-gradient(top,#008dfd 30%,#0370ea 100%);cursor:pointer}
+
+
+/*****************************************************************************/
+/***********************************HD 1152***********************************/
+/*****************************************************************************/
+
+@media only screen and (max-width: 11439px) { /**Replace to 1439 when FullHD wins**/
+
+
+input { /*used in search*/
+height:28px;
+}
+
+}

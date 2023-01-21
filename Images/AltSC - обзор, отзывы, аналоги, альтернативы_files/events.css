@@ -1,0 +1,92 @@
+/*********************************WEBINARS*********************************/
+/*Used: ITWebinars, LB network sidebar events, LocalIT sidebar events*/
+
+.webinar_block {
+display:block;
+margin-bottom:1.4em;
+padding:1.4em;
+border:1px solid #CCCCCC;
+}
+
+.webinar_block_image {
+position: relative;
+display: inline-block;
+}
+
+.webinar_image_live {
+position: absolute;
+right:10px;
+bottom:10px;
+}
+
+.webinar_block_description {
+display:inline-block;
+vertical-align:top;
+margin-left:1.4em;
+max-width:calc(100% - 325px);
+}
+
+.webinar_block_title {
+text-align:left;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.4em;
+font-weight:normal;
+margin-bottom:1em;
+margin-top:0px;
+}
+
+.webinar_block_title a {
+color:#4B8ABF;
+text-decoration:underline;
+}
+
+.webinar_block_date {
+font-size:1em;
+font-weight:bold;
+}
+
+/*Sidebar Event*/
+/*Used: LB, sattelits, LB.ua, LocalIT*/
+
+.sidebar_events {
+padding-bottom:1em;
+border-bottom:1px solid #e3e3e3;
+}
+
+
+.sidebar_event {
+clear:left;
+text-align:left;
+color:#999999;
+padding-top:1.4em;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.35em;
+}
+
+.sidebar_event a {
+color:#4B8ABF;
+text-decoration:none;
+}
+
+.sidebar_event a:hover {
+color:#FF3300;}
+
+.sidebar_event img {
+margin-bottom:-0.2em;
+}
+
+/*****************************************************************************/
+/*******************************MOBILE****************************************/
+/*****************************************************************************/
+
+
+@media only screen and (max-width: 1023px) {
+
+.webinar_block_description {
+display:block;
+margin-left:0;
+margin-top:1em;
+max-width:100%;
+}
+
+}

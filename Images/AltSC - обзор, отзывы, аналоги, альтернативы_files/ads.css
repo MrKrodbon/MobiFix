@@ -1,0 +1,169 @@
+/*****************************************************************************/
+/*********************************FullHD 1440**********************************/
+/*****************************************************************************/
+
+.ads_sidebar {
+max-width:100%;
+text-align:center;
+}
+
+.ads_sidebar img {
+max-width:100%;
+}
+
+.ads_upper {
+box-sizing: border-box; /*div will include padding and border*/
+border:1px solid #CCCCCC;
+padding:14px 0 13px 0;
+text-align:center;
+}
+
+.ads_upper img {
+max-height:135px;
+margin:0;
+padding:0;
+}
+
+.ads_under {
+box-sizing: border-box; /*div will include padding and border*/
+border:1px solid #CCCCCC;
+padding:14px 0 13px 0;
+text-align:center;
+}
+
+.ads_under img {
+max-height:135px;
+margin:0;
+padding:0;
+}
+
+.ads_under_mobile {
+display:none;
+}
+
+.ads_footer_mobile {
+display:none;
+}
+
+.sticky {
+  position: fixed;
+  top: 15px;  /* если ноль заменить на число (и в скрипте тоже), то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом. Применим, например, при фиксированном сверху меню */
+  z-index: 101;
+}
+
+/******************************Advertising page******************************/
+
+.ads_title {
+clear:left;
+text-align:left;
+color:#4B8ABF;
+padding-top:1em;
+padding-bottom:0.5em;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.6em;
+}
+
+.ads_sub_title {
+clear:left;
+text-align:left;
+color:#4B8ABF;
+padding-top:10px;
+padding-bottom:5px;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.5em;
+}
+
+.logos img{
+float:left;
+}
+
+/*****************************************************************************/
+/***********************************HD 1152***********************************/
+/*****************************************************************************/
+
+@media only screen and (max-width: 11439px) { /**Replace to 1439 when FullHD wins**/
+
+
+.ads_upper {
+padding:11px 0 10px 0; /*not including border*/
+}
+
+.ads_upper img {
+max-height:108px;
+}
+
+.ads_under img {
+max-height:108px;
+}
+
+}
+
+/*****************************************************************************/
+/***********************************Tablet 1024*********************************/
+/*****************************************************************************/
+
+@media only screen and (max-width: 1151px) {
+
+.ads_upper {
+padding:9px 0 8px 0; /*not including border*/
+}
+
+.ads_upper img {
+max-height:96px;
+}
+
+.ads_under img {
+max-height:96px;
+}
+
+}
+
+/*****************************************************************************/
+/*******************************MOBILE****************************************/
+/*****************************************************************************/
+
+
+@media only screen and (max-width: 1023px) {
+
+.ads_upper {
+display:none;
+}
+
+.ads_under {
+display:none;
+}
+
+.ads_sidebar {
+display:none;
+}
+
+.ads_footer {
+display:none;
+}
+
+.ads_under_mobile {
+display:inherit;
+margin-top:20px;
+text-align:center;
+}
+
+.ads_under_mobile img {
+max-width:100%;
+}
+
+.ads_footer_mobile {
+display:inherit;
+margin-top:20px;
+text-align:center;
+}
+
+.ads_footer_mobile img {
+max-width:100%;
+}
+
+.sticky {
+position:static;
+top:auto;
+}
+
+}

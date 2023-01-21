@@ -1,0 +1,165 @@
+/*****************************************************************************/
+/*********************************FullHD 1440**********************************/
+/*****************************************************************************/
+
+.summary_title {
+clear:left;
+text-align:left;
+color:#4B8ABF;
+padding-top:20px;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.5em;
+}
+
+.summary_title a {
+color:#4B8ABF;
+text-decoration:none;
+}
+
+.summary_title a:hover {
+color:#1E9B3D;}
+
+.summary_title span {
+color:#999999;
+}
+
+
+.summary_details {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:0.8em;
+font-weight:normal;
+color:#4B8ABF;
+text-align:left;
+text-decoration:none;
+color:#666666;
+margin-top:0.7em;
+}
+
+.summary_details a {
+text-decoration:none;
+color:#4B8ABF;
+}
+
+.summary_image {
+margin-top:0.7em;
+}
+
+.summary_image img {
+max-width:80%;
+}
+
+.summary_text {
+font-size:1em;
+text-align:justify;
+margin-top:0.7em;
+}
+
+.summary_text a {
+color:#4B8ABF;
+text-decoration:underline;
+}
+
+.summary_tags {
+margin-top:5px;
+display:block;
+background-color:#F9F9F9;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+font-weight:normal;
+color:#333333;
+text-align:left;
+text-decoration:none;
+padding: 2px 0 2px 5px;
+color:#666666;}
+
+.summary_tags a {
+color:#4B8ABF;
+text-decoration:none;
+}
+
+ 
+/*********************************NEWS*********************************/
+
+
+.fb-like {
+padding-top:8px;
+}
+
+.news_details {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:0.8em;
+font-weight:normal;
+color:#4B8ABF;
+text-align:left;
+text-decoration:none;
+color:#666666;
+white-space:nowrap;
+padding-right:0.5em;
+}
+
+
+.news_text {
+font-size:1em;
+text-align:justify;
+margin-bottom:1em;
+}
+
+.news_text a {
+color:#4B8ABF;
+text-decoration:underline;
+}
+
+.news_text img{
+max-width:100%;
+}
+
+.news_text iframe{
+border:0px;
+max-width:100%;
+}
+
+/*********************************TAG*********************************/
+
+.article_text { /*Used in tags, ads*/
+font-size:1em;
+text-align:justify;
+}
+
+.article_text a {
+color:#4B8ABF;
+text-decoration:underline;}
+
+.article_text img{
+clear:left;
+border:0px;
+max-width:100%;
+}
+
+.article_text iframe{
+clear:left;
+display:block;
+border:0px;
+width:640px;
+height:360px;
+max-width:100%;
+}
+
+/*Sidebar Tag Cloud*/
+
+.tags {
+width:100%;
+text-align:justify;
+padding:20px 0 20px 0;
+font-family:Georgia, "Times New Roman", Times, serif;
+border-top:1px solid #e3e3e3;
+}
+
+.tags a {
+color:#999999;
+text-decoration:none;
+}
+
+.tags a:hover {
+color:#4B8ABF;
+text-decoration:none;
+}

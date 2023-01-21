@@ -1,0 +1,97 @@
+/*****************************************************************************/
+/*********************************FullHD 1440**********************************/
+/*****************************************************************************/
+
+#navigation-bar {
+margin-bottom:5px;
+}
+
+#navigation-bar img {
+max-height:1.8em;
+}
+
+.register-avatar {
+margin-left:0.5em;
+}
+
+.register{
+font-size:0.8em;
+}
+
+.register a {
+color:#4B8ABF;
+text-decoration:underline
+}
+
+/*ВЫПАДАЮЩЕ МЕНЮ*/
+
+#subnav {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	}
+
+
+#subnav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	z-index: 100;
+	}
+
+#subnav a {
+	background: #FFFFFF;
+	display: block;
+	}
+
+#subnav li li {
+	width: 100%;
+	background: #FFFFFF;
+	border-bottom: 1px solid #e3e3e3;	
+	border-right: 1px solid #e3e3e3;
+	border-left: 1px solid #e3e3e3;
+	z-index: 100;
+	}
+
+#subnav li li a:hover, #subnav li li a:active {
+	background-color:#F8F8F8;
+	}
+
+#subnav li ul {
+	position: absolute;
+	width: 192px;
+	left: -999em;
+	z-index: 100;
+	}
+
+#subnav li:hover ul {
+	left: auto;
+	display: block;
+	z-index: 100;
+	}
+	
+/*****************************************************************************/
+/***********************************HD 1152***********************************/
+/*****************************************************************************/
+
+@media only screen and (max-width: 11439px) { /**Replace to 1439 when FullHD wins**/
+
+#subnav li ul {
+width: 162px;
+}
+
+}
+
+
+/*****************************************************************************/
+/*******************************MOBILE****************************************/
+/*****************************************************************************/
+
+
+@media only screen and (max-width: 1023px) {
+
+#navigation-bar {
+display:none;
+}
+
+}

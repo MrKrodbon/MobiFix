@@ -1,0 +1,105 @@
+// function that replaces videothumb by video
+function showVideo(video_id) { 
+var element = document.getElementById(video_id);
+element.innerHTML = '<iframe src="https://www.youtube.com/embed/'+video_id+'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+}
+
+// function for quots in comments
+function quoteSelection(name)
+{
+// find the comment text field
+var txtarea = document.getElementById ('comment_text');
+
+// get selected text
+	if (window.getSelection)
+	{
+		selection = window.getSelection().toString();
+	}
+	else if (document.getSelection)
+	{
+		selection = document.getSelection();
+	}
+	else if (document.selection)
+	{
+		selection = document.selection.createRange().text;
+	}
+// enter the text to the field
+	if (selection)
+	{ 
+		if (name)
+		{
+		txtarea.value  += "[b]" + name + "[/b]\n";
+		}
+		txtarea.value  += "[quote]" + selection + "[/quote]\n";
+		txtarea.focus();
+		return; 
+	}
+}
+
+// function that inserts username to comment
+function quoteAuthor(name)
+{
+// find the comment text field
+var txtarea = document.getElementById ('comment_text');
+txtarea.value  += "[b]" + name + "[/b]\n";
+txtarea.focus();
+return; 
+}
+
+
+// function that shows comment form under comment list
+function comment_form(){
+	$('a','.comment_reply').show();
+	var form = $('.comments_form');
+	$('input[name="comment_parent_id"]',form).val(0);
+	$('#comments_form_placeholder').append(form);
+	form.show();
+	return false;
+}
+
+// function that shows comment form for reply
+function subcomment_form(comment_id){
+	$('a','.comment_reply').show();
+	var form = $('.comments_form');
+	$('input[name="comment_parent_id"]',form).val(comment_id);
+	var reply = $('#comment-'+comment_id);
+	$('a',reply).hide();
+	reply.append(form);
+	form.show();
+	return false;
+}
+
+// function that sticks sidebar banner
+(function(){ 
+var a = document.querySelector('#aside1'), b = null;  // find the banner's div
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) {
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild);
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) {
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px';
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) {
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
